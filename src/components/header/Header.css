@@ -8,6 +8,9 @@
   z-index: 1;
   background-color: var(--body-color);
 }
+.nav__item{
+  cursor: pointer;
+}
 .nav__item a{
     text-shadow: 1px 1px #EDEADE;
 }
