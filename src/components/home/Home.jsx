@@ -6,9 +6,7 @@ import "./Home.css";
 import { BsFillMouseFill } from "react-icons/bs";
 import { BsArrowDownCircle } from "react-icons/bs";
 import {
-  Link,
-  animateScroll as scroll,
-  } from "react-scroll";
+  Link} from "react-scroll";
 
 const Home = () => {
   return (

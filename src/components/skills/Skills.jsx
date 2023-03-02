@@ -64,7 +64,7 @@ const Skills = () => {
               return (
                 <div className="skills-container" key={index}>
                   <i className="bx bxs-right-arrow-circle"></i>
-                  <li >{value}</li> {value=='ReactJs' || value=='Redux' ? <span className="expertise">Advanced</span> : <span className="expertise">Intermediate</span>}
+                  <li >{value}</li> {value=='ReactJs' || value==='Redux' ? <span className="expertise">Advanced</span> : <span className="expertise">Intermediate</span>}
                 </div>
               );
             })}
