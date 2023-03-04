@@ -14,24 +14,24 @@ const Footer = () => {
                     <a href="#about" className='footer__link'>About</a>
                 </li>
                 <li>
-                    <a href="#about" className='footer__link'>Skills</a>
+                    <a href="#skills" className='footer__link'>Skills</a>
                 </li>
                 <li>
-                    <a href="#about" className='footer__link'>Contact</a>
+                    <a href="#contact" className='footer__link'>Contact</a>
                 </li>
                 <li>
-                    <a href="#about" className='footer__link'>Projects</a>
+                    <a href="#projects" className='footer__link'>Projects</a>
                 </li>
             </ul>
 
             <div className="footer__social">
-                <a href="http://www.instagram.com/" className='footer__social-link' target='_blank' rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/sumitmishra23/" className='footer__social-link' target='_blank' rel="noopener noreferrer">
                  <i className="bx bxl-instagram"></i>
                 </a>
-                <a href="http://www.instagram.com/" className='footer__social-link' target='_blank' rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/sumitmishra23/" className='footer__social-link' target='_blank' rel="noopener noreferrer">
                  <i className="bx bxl-facebook"></i>
                 </a>
-                <a href="http://www.instagram.com/" className='footer__social-link' target='_blank' rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/sumitmishra23/" className='footer__social-link' target='_blank' rel="noopener noreferrer">
                  <i className="bx bxl-twitter"></i>
                 </a>
             </div>

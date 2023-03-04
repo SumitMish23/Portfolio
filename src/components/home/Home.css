@@ -40,6 +40,9 @@
 .home__description {
   margin-bottom: 2rem;
 }
+.icon-linkedin{
+border-radius: 100px;
+}
 /* .home__subtitle::before{
     content: '';
     position: absolute;
