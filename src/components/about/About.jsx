@@ -19,7 +19,7 @@ const About = () => {
                 <p className="about__description">
                  Frontend Developer who loves to play with codes,having experience of almost an year in making UI  & UX Designs and converting them into real interfaces. ReactJs,AngularJs,TypeScript,Redux are some of the core frameworks in which I had worked on (and would love to).In my free time,I either dive into Chess or will go for some Sprinting. 
                 </p>
-                <a download href={CV} className='button button--flex'>Download CV <AiFillFilePdf className='cv--icon'/></a>
+                <a  className='button button--flex'>Download CV <AiFillFilePdf className='cv--icon'/></a>
                </div>
         </div>
     </section>
