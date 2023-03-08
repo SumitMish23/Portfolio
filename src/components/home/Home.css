@@ -36,9 +36,12 @@
   margin-top: 1rem;
   white-space: nowrap;
   position: relative;
+  max-width: fit-content;
+  
 }
 .home__description {
   margin-bottom: 2rem;
+ 
 }
 .icon-linkedin{
 border-radius: 100px;
@@ -82,7 +85,7 @@ border-radius: 100px;
 
 /* Animation */
 .anim-typewriter {
-  animation: typewriter 4s steps(44) 1s 1 normal both,
+  animation: typewriter 6s steps(44)infinite normal ,
     blinkTextCursor 500ms steps(44) infinite normal;
 }
 @keyframes typewriter {
@@ -90,7 +93,7 @@ border-radius: 100px;
     width: 0;
   }
   to {
-    width: 12.25rem;
+    width:198px;
   }
 }
 @keyframes blinkTextCursor {
