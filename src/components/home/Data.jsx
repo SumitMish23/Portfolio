@@ -3,12 +3,8 @@ import { TbBrandTelegram } from "react-icons/tb";
 import "./Home.css";
 
 const Data = () => {
-  const arrayOfTypewriter = ["Programmer", "Frontend Developer"];
   const [text, setText] = useState("Frontend Developer");
-  
-  
 
-  
   return (
     <div className="home__data">
       <h1 className="home__title ">Sumit Mishra</h1>
