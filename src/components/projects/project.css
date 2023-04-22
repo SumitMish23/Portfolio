@@ -103,3 +103,16 @@
   position: relative;
     top: 3px;
 }
+/* MEDIA QUERIES  */
+@media screen and (max-width:992px){
+  .card{
+    width: 29rem;
+  }
+  
+}
+@media screen and (max-width:600px){
+  .card{
+    width: 23rem;
+  }
+  
+}

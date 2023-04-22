@@ -111,9 +111,9 @@ img {
 
 
 /* Break-Points */
-@media screen and (max-width:992px){
+/* @media screen and (max-width:992px){
   .container{
     margin: 0rem 2rem;
   }
   
-}
+} */
