@@ -101,7 +101,7 @@
 }
 .professional-project-text svg{
   position: relative;
-    top: 3px;
+    top: 3px ;
 }
 /* MEDIA QUERIES  */
 @media screen and (max-width:992px){
