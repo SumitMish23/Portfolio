@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { TbBrandTelegram } from "react-icons/tb";
 import "./Home.css";
 
 const Data = () => {
-  const [text, setText] = useState("Frontend Developer");
+  const [text] = useState("Frontend Developer");
 
   return (
     <div className="home__data">
