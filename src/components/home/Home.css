@@ -16,7 +16,12 @@
   height: 300px;
   animation: profile__animate 8s ease-in-out infinite 1s;
 }
-
+.home__cta{
+  transition: all 0.25s ease-in-out;
+}
+.home__cta:hover{
+  transform: translateY(2px);
+}
 .home__social {
   display: grid;
   grid-template-columns: max-content;
