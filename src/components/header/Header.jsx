@@ -1,82 +1,57 @@
 import React, { useState } from "react";
-import "./Header.css";
+import "./Header.scss";
 import Hamburger from "hamburger-react";
 import { Link } from "react-scroll";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
+  const navbarLinks = [
+    {
+      text: 'Home',
+      name: 'home'
+    },
+    {
+      text: 'About',
+      name: 'about'
+    },
+    {
+      text: 'Projects',
+      name: 'projects'
+    },
+    {
+      text: 'Contact',
+      name: 'contact'
+    },
+  ]
   function handleHamburgerToggle() {
     setOpen(!isOpen);
   }
 
   return (
     <>
-      <header className="header">
-        <nav className="nav container">
+      <header className="header | py-3">
+        <nav className="nav container ">
           <a href="index.html" className="nav__logo">
             <div className="img"></div>
           </a>
-          <div className="navbar">
+          <div className="navbar | basis-1/2">
             <ul className={isOpen ? "nav__list" : "nav__list__close "}>
-              <li className="nav__item">
-                <Link
-                  to="home"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                >
-                  <i className="uil uil-estate nav__icon"></i>Home
-                </Link>
-              </li>
-
-              <li className="nav__item">
-                <Link
-                  to="about"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                >
-                  <i className="uil uil-user nav__icon"></i>About
-                </Link>
-              </li>
-
-              <li className="nav__item">
-                <Link
-                  to="skills"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                >
-                  <i className="uil uil-file-alt nav__icon"></i>Skills
-                </Link>
-              </li>
-
-              <li className="nav__item">
-                <Link
-                  to="projects"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                >
-                  <i className="uil uil-briefcase-alt nav__icon"></i>Projects
-                </Link>
-              </li>
-
-              <li className="nav__item">
-                <Link
-                  to="contact"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                >
-                  <i className="uil uil-message nav__icon"></i>Contact
-                </Link>
-              </li>
+              {
+                navbarLinks.map((linkItem) => {
+                  return <li className={`nav__item  nav-${linkItem.name}`}>
+                    <Link
+                      to={linkItem.name}
+                     
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                    >
+                      <i className={`uil uil-user nav__icon`}></i>{linkItem.text}
+                    </Link>
+                  </li>
+                })
+              }
             </ul>
           </div>
         </nav>

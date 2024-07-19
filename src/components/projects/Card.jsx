@@ -9,18 +9,18 @@ const Card = ({ name, info, image, deploymentLink, githubLink,websiteLink }) => 
       <p>{info}</p>
 
      {
-      deploymentLink && <form action={deploymentLink} target="_blank">
+      deploymentLink && <form action={deploymentLink} target="_blank"  rel="noreferrer">
       <button className="button btn-deployment">Deployment Link</button>
     </form>
      } 
 
      {
-        githubLink &&  <form action={githubLink} target="_blank">
+        githubLink &&  <form action={githubLink} target="_blank"  rel="noreferrer">
         <button className="button btn-github">Github Link</button>
       </form>
      }
      {
-        websiteLink && <form action={websiteLink} target="_blank">
+        websiteLink && <form action={websiteLink} target="_blank"  rel="noreferrer">
         <button className="button btn-deployment">Go To The Site</button>
       </form>
      }

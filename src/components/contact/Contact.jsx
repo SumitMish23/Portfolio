@@ -8,14 +8,13 @@ const Contact = () => {
     const form = useRef();
     const textArea=useRef();
     const sendEmail = (e) => {
-        alert('Message was sent to the Sumit !')
-      
-         document.querySelector('textarea').value=''; 
+        alert('Message was sent to the Sumit !');
+        document.querySelector('textarea').value=''; 
         emailjs.sendForm('service_v2azgws', 'template_0ndi3b3', form.current, 'fVQX914ugZCWBD0ne');
         Array.from(document.querySelectorAll("input")).forEach(
             input => (input.value = "")
           );
-          textArea.current.value=''
+          textArea.current.value='';
       };
   return (
    <section className="contact section" id='contact'>
@@ -32,9 +31,7 @@ const Contact = () => {
                     <i className="bx bx-mail-send contact__card-icon"> </i>
                         <h3 className="contact__card-title">Email</h3>
                         <span className="contact__card-data">sumit894sumit@gmail.com</span>
-
-                        <a href="mailto:sumit894sumit@gmail.com" className='contact__button' target={'_blank'}>Write a mail<i className="bx bx-right-arrow-alt"></i></a>
-                   
+                        <a href="mailto:sumit894sumit@gmail.com" className='contact__button' target={'_blank'}  rel="noreferrer">Write a mail<i className="bx bx-right-arrow-alt"></i></a>
                 </div>
 
                 <div className="contact__card">
@@ -50,8 +47,6 @@ const Contact = () => {
                         <h3 className="contact__card-title">LinkedIn</h3>
                         <span className="contact__card-data">Sumit Mishra</span>
                         <a href="https://www.linkedin.com/in/sumitmishra23/" target={'_blank'}>DM me<i className="bx bx-right-arrow-alt"></i></a>
-                     
-                   
                 </div>
             </div>
         </div>
