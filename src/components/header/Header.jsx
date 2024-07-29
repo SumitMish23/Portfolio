@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, {  useState } from "react";
 import "./Header.scss";
 import Hamburger from "hamburger-react";
 import { Link } from "react-scroll";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
+
   const navbarLinks = [
     {
       text: 'Home',
@@ -36,16 +37,17 @@ const Header = () => {
           </a>
           <div className="navbar | basis-1/2">
             <ul className={isOpen ? "nav__list" : "nav__list__close "}>
+              <span className="nav__list-menu-tag">Menu</span>
               {
-                navbarLinks.map((linkItem) => {
-                  return <li className={`nav__item  nav-${linkItem.name}`}>
+                navbarLinks.map((linkItem,index) => {
+                  return <li className={`nav__item  nav-${linkItem.name}`} key={index} >
                     <Link
                       to={linkItem.name}
-                     
                       spy={true}
                       smooth={true}
                       offset={0}
                       duration={500}
+                      onClick={handleHamburgerToggle}
                     >
                       <i className={`uil uil-user nav__icon`}></i>{linkItem.text}
                     </Link>

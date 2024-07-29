@@ -1,0 +1,134 @@
+:root {
+  --white-color: hsl(0, 0%, 95%);
+  --black-color: hsl(0, 0%, 0%);
+  --black-color-light: hsl(0, 0%, 40%);
+  --title-color: hsl(0, 0%, 0%);
+  --text-color: hsl(0, 0%, 35%);
+  --text-color-light: hsl(0, 0%, 64%);
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+}
+
+.projects-section {
+  .projects{
+    display: flex;
+    overflow-x: hidden;
+    column-gap: 1.5rem;
+    padding:0.5rem 0 0.5rem 30% ;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    background-color: hsl(0, 0%, 95%);
+    box-shadow: 2px -1px 3px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+    flex-basis: 350px;
+    flex-shrink: 0;
+
+    &-header {
+      position: relative;
+
+      &__category {
+        font-size: var(--small-font-size);
+        font-weight: var(--font-medium);
+        color: var(--text-color);
+        margin: .5rem 0 0 0;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 1px;
+          top: 8px;
+          display: block;
+          width: 30px;
+          height: 1.45px;
+          background-color: var(--black-color);
+        }
+
+
+        p {
+          padding-left: 35px;
+        }
+      }
+
+      &__image {
+        img {
+          height: 225px;
+          max-width: 100%;
+          border-radius: 4px;
+        }
+
+      }
+
+      &__link {
+        position: absolute;
+        inset: auto 10px 10px auto;
+
+        button {
+          background-color: black;
+          padding: 0.65rem;
+
+          svg {
+            color: white;
+            font-size: 18px;
+            rotate: 45deg;
+          }
+        }
+      }
+    }
+
+    &-body {
+      &__heading {
+        color: var(--black-color);
+      }
+
+      &__description {
+        min-height: 80px;
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-regular);
+        color: var(--text-color);
+        line-height: 1.45;
+      }
+    }
+
+    &-footer {
+      .card-footer__btn {
+        color: var(--text-color);
+        font-size: 13px;
+        font-weight: 500;
+
+        &:hover {
+          color: var(--black-color);
+        }
+
+        svg {
+          color: var(--black-color);
+          font-size: clamp(0.75rem, 0.6384rem + 0.3571vw, 0.90625rem);
+          transition: all 0.5s ease;
+        }
+
+        &.btn-github:hover {
+          svg {
+            scale: 1.1;
+          }
+        }
+
+        &.btn-deployed:hover {
+          svg {
+
+            rotate: 360deg;
+          }
+        }
+      }
+    }
+  }
+}

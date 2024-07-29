@@ -5,10 +5,11 @@ const Footer = () => {
   return (
     <div className="footer">
         <div className="footer_container">
-            <h1 className="footer__title">Sumit</h1>
+            
+            <h1 className="footer__title">Sumit Mishra</h1>
             <span className="footer__subtitle">Frontend Developer</span>
 
-
+    
             <ul className="footer__list">
                 <li>
                     <a href="#about" className='footer__link'>About</a>
