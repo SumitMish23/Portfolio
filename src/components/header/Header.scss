@@ -60,7 +60,8 @@
     &__list {
       display: flex;
       column-gap: 2rem;
-      &-meu-tag{
+
+      &-menu-tag {
         display: none;
       }
     }
@@ -142,12 +143,31 @@
       right: 0rem;
       top: 0rem;
       transition: all .5s ease-in;
-      &-menu-tag{
+
+      &-menu-tag {
         display: block;
         position: absolute;
-        top: 32px;
+        top: 10px;
         color: white;
         font-size: 12px;
+        position: relative;
+       
+
+        &:before,
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 20px;
+          height: 1px;
+          background-color: white;
+          top: 8px;
+          right: 37px;
+        }
+
+        &:after {
+          left: 37px;
+        }
       }
     }
 

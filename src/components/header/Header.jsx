@@ -37,7 +37,7 @@ const Header = () => {
           </a>
           <div className="navbar | basis-1/2">
             <ul className={isOpen ? "nav__list" : "nav__list__close "}>
-              <span className="nav__list-menu-tag">Menu</span>
+              <span className="nav__list-menu-tag ">Menu</span>
               {
                 navbarLinks.map((linkItem,index) => {
                   return <li className={`nav__item  nav-${linkItem.name}`} key={index} >
@@ -47,7 +47,7 @@ const Header = () => {
                       smooth={true}
                       offset={0}
                       duration={500}
-                      onClick={handleHamburgerToggle}
+                      onClick={window.innerWidth < 700 ? handleHamburgerToggle : ''}
                     >
                       <i className={`uil uil-user nav__icon`}></i>{linkItem.text}
                     </Link>

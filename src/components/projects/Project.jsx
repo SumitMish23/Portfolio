@@ -16,15 +16,15 @@ const Project = () => {
     const triggerWidth = triggerRef.current.offsetWidth;
    
     const animation = gsap.to(childRef.current, {
-      xPercent: (window.innerWidth < 600 ? -100 : -((childsLength + 1)*10) * (childsLength)),
+      xPercent: (-((childsLength + 1)*10) * (childsLength)),
     
       ease: "none",
       rotate: 0,
       scrollTrigger: {
         trigger: triggerRef.current,
-        // markers: true,
+        markers: true,
         start: 'top 100px',
-        end:()=> `+=${triggerWidth}px`,
+        end:()=> `+=${childRef.current[0].offsetWidth * childsLength}px`,
         pin: true,
         scrub: 1,
       },
@@ -42,7 +42,7 @@ const Project = () => {
       animation = createAnimation();
     };
 
-    window.addEventListener('resize', handleResize);
+    // window.addEventListener('resize', handleResize);
 
     return () => {
       animation.scrollTrigger.kill();
