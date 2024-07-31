@@ -1,7 +1,6 @@
 import React from 'react';
 import { useRef, useState } from 'react';
 import '../contact/contact.css'
-import { ReactComponent as Loader } from '../../assets/loader.svg';
 import { TbBrandTelegram } from "react-icons/tb";
 
 const Contact = () => {
@@ -37,7 +36,7 @@ const Contact = () => {
         const formData = new FormData(e.target);
         const apiKey = 'why this kolaveri di';
         try {
-            const data = await fetch("http://localhost:8000/contact", {
+            const data = await fetch("https://portfolio-02qd.onrender.com/contact", {
                 method: "POST",
                 body: JSON.stringify(Object.fromEntries(formData)),
                 headers: {
@@ -120,7 +119,7 @@ const Contact = () => {
                             <label htmlFor="" className="contact__form-tag">Message</label>
                             <textarea ref={textArea} name="message" cols="30" maxLength="215" rows="10" className='contact__form-input-text | ml-4' placeholder='Enter Your Text..' onChange={handleInputChange}></textarea>
                         </div>
-                        <button type='submit' href="#contact" className='button button--flex submit-button'>{showLoader ? <>Sending Message <Loader /> </> : <>Send Message <TbBrandTelegram className='telegram-icon' /></>}  </button>
+                        <button type='submit' href="#contact" className='button button--flex submit-button'>{showLoader ? <>Sending Message <div className='loader'></div>  </> : <>Send Message <TbBrandTelegram className='telegram-icon' /></>}  </button>
                     </form>
                 </div>
             </div>

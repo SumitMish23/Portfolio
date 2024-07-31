@@ -97,6 +97,23 @@ form {
 }
 
 
+.loader{
+  background-color: transparent;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border: 5px solid white;
+  border-left-color: var(--title-color);
+  margin: 0 4px;
+  animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+  from {rotate: 0deg;}
+  to {rotate: 360deg;}
+}
+
+
 @media screen and (max-width:992px) {
 
   .contact__container {
@@ -112,4 +129,4 @@ form {
     width: 94%;
     margin: auto;
   }
-}
+};
