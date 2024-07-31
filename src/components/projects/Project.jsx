@@ -22,7 +22,7 @@ const Project = () => {
       rotate: 0,
       scrollTrigger: {
         trigger: triggerRef.current,
-        markers: true,
+        markers: false,
         start: 'top 100px',
         end:()=> `+=${childRef.current[0].offsetWidth * childsLength}px`,
         pin: true,
