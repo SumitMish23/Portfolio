@@ -1,8 +1,8 @@
 import React from 'react';
 import './About.scss';
 import Info from './Info';
-import Image from '../../assets/profile-pic-edited.jpg'
-import gsap from 'gsap';
+import Image from '../../assets/about-img.jpg'
+
 
 const About = () => {
   
