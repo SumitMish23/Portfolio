@@ -58,7 +58,7 @@ const Project = () => {
     <>
       <section className="projects-section" id="projects">
         <h2 className="section__title">Projects</h2>
-        <span className="section__subtitle">Professional & Personal <p>(Hover around to see the live version)</p></span>
+        <span className="section__subtitle">Professional & Personal</span>
 
         <div className="projects" ref={triggerRef}>
           {projectData.map((project, index) => {
